@@ -1,0 +1,12 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return "Welcome to the index page."
+
+@app.route("/signin")
+def who():
+    return "Who are you?"
+
